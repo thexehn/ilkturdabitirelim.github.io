@@ -16,7 +16,7 @@ function basliyoruzCheck(el) {
      var soundFile = sounds[Math.floor(Math.random()*sounds.length)];
      document.getElementById("dedemraconlariplayer").innerHTML="<embed src=\""+soundFile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
     
-    console.log("dedemraconlariplayer");
+    console.log(soundFile);
   }
   
 }
