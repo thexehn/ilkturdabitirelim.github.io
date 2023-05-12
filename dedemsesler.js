@@ -11,9 +11,12 @@ function basliyoruzCheck(el) {
         "6filo.mp3",
         "enkisavideo.mp3",
          "kimsepadisahdegil.mp3"];
+  
       
      var soundFile = sounds[Math.floor(Math.random()*sounds.length)];
      document.getElementById("dedemraconlariplayer").innerHTML="<embed src=\""+soundFile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+    
+    console.log("dedemraconlariplayer");
   }
   
 }
