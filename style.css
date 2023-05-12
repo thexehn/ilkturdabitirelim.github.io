@@ -1,0 +1,224 @@
+@import url(muhur.css);
+@font-face {
+    font-family: "PF Din Text CondPro";
+    src: url(PFDinTextCondPro-Bold.ttf);
+}
+
+* {
+    font-family: "PF Din Text CondPro";
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    transition: 0.2s;
+}
+
+body {
+    background-color: rgb(60, 146, 179);
+
+}
+
+h5 {
+    font-size: 45px;
+    display: inline;
+    color: white;
+
+}
+
+#ilk {
+    letter-spacing: 2px;
+}
+
+.kirmiziarka {
+    background-color: rgb(196, 22, 28);
+    height: 23px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    bottom: 38px;
+    z-index: -1;
+    right: 5px;
+
+
+}
+
+.kirmizion h5 {
+    letter-spacing: 10px;
+}
+
+.ilkturdabitirelim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    margin-left: -250px;
+    margin-top: -300px;
+}
+
+.oypusulasi {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -180px;
+    box-shadow: 3px 3px 4px 3px;
+    z-index: -2;
+    cursor:grab;
+}
+
+.muhur {
+    border: 1px red solid;
+    transform: rotate(-45deg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: 28px;
+    border-radius: 400px;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+    transition: 0.15s !important;
+    
+
+}
+
+.muhur p {
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 2px;
+    
+}
+
+
+#oymuhurtikla{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -36px;
+    margin-left: 32px;
+    opacity: 0;
+    
+}
+    
+    .kirmiziarka1 {
+        background-color: rgb(196, 22, 28);
+    height: 23px;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    bottom: 38px;
+    z-index: -1;
+    right: 5px;
+    }
+
+    .ederiz h5{
+        letter-spacing: 10px;
+    }
+
+    .tesekkur h5 {
+
+        letter-spacing: 10px;
+
+    }
+
+    .kirmiziarka2 {
+        background-color: rgb(196, 22, 28);
+        height: 23px;
+        width: 280px;
+        margin: auto;
+        position: relative;
+        bottom: 38px;
+        z-index: -1;
+        right: 5px;
+    }
+
+    .tesekkurederiz {
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        bottom: 50%;
+        display: inline;
+        margin-left: -150px;
+        margin-top: 40px;
+        opacity: 0;
+    }
+
+
+@media screen and (max-width: 900px) {
+
+    .pusula .muhur p {
+        font-size: 9px;
+    }
+    .container #oymuhurtikla:checked + .muhur {
+        opacity: 1;
+        visibility: visible;
+        width: 22px;
+        height: 22px;
+        transition: 0.15s !important;
+        
+    }
+
+    #oymuhurtikla{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -42px;
+        margin-left: 25px;
+    }
+
+    .oypusulasi {
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+
+    .muhur {
+        top: 50%;
+        left: 50%;
+        margin-top: -45px;
+        margin-left: 21px;
+        
+    
+    }
+
+    .kirmiziarka2 {
+        bottom: 43px;
+    }
+
+    .kirmiziarka {
+        bottom: 43px;
+    }
+
+    .kirmiziarka1 {
+        bottom: 43px;
+    }
+}
+
+@media screen and (min-width: 2000) {
+
+    .kirmiziarka2 {
+        bottom: 43px;
+    }
+
+    .kirmiziarka {
+        bottom: 43px;
+    }
+
+    .kirmiziarka1 {
+        bottom: 43px;
+    }
+    
+}

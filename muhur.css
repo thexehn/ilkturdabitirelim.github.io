@@ -1,0 +1,15 @@
+.container #oymuhurtikla:checked + div {
+    opacity: 1;
+    visibility: visible;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    transition: 0.15s !important;
+}
+
+.container #oymuhurtikla:checked ~ .tesekkurederiz {
+    opacity: 1;
+
+}
+
+
