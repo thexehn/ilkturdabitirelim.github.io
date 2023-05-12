@@ -205,6 +205,11 @@ h5 {
     .kirmiziarka1 {
         bottom: 43px;
     }
+
+    .btn {
+        margin-top: 20px !important;
+    }
+    
 }
 
 @media screen and (min-width: 2000) {
@@ -223,9 +228,34 @@ h5 {
     
 }
 
+
+#dedemraconlariplayer {
+  opacity: 1;
+}
+
 .oykullanim {
     color: white;
-    margin-top: 150px;
+    margin-top: 130px;
     text-transform: uppercase;
 }
 
+.btn {
+    border: 0px;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -400px;
+    z-index: 100;
+    background-color: rgb(196, 22, 28);
+    color:white;
+}
+
+.oysifirla p {
+    color: white;
+    padding: 3px;
+}
