@@ -40,9 +40,50 @@ function basliyoruzCheck(el) {
   }
   var count = localStorage.getItem("count") || 0;
   document.getElementById("count").innerHTML = count + "&nbsp;";
+  console.log("Çalınan ses dosyası: ", audios.src);
   
   // Sayfayı ses dosyası tamamlandığında yenile
   audios.addEventListener("ended", function() {
     window.location.reload();
   });
 }
+
+
+var resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", oySifirla);
+
+function oySifirla() {
+  var count = localStorage.getItem("count") || 0;
+  if (document.getElementById("oymuhurtikla").checked) {
+    // Checkbox seçiliyse, sadece bir mesaj gösterin ve reset-button'un visibility'sini gizleyin
+    document.getElementById("reset-button").style.visibility = "hidden";
+  } else {
+    // Checkbox seçili değilse, normal işlemi yapın ve reset-button'un visibility'sini gösterin
+    localStorage.clear();
+    document.getElementById("sifirlandi").innerHTML = "Oyunuz başarıyla sıfırlandı.";
+    document.getElementById("reset-button").style.visibility = "visible";
+    setTimeout(function() {
+      window.location.reload();
+    }, 3000); // 3 saniye gecikme
+  }
+  count = localStorage.getItem("count") || 0;
+  document.getElementById("count").innerHTML = count + "&nbsp;";
+}
+
+// Sayfa yüklendiğinde reset-button'ın visibility'sini kontrol edin
+window.onload = function() {
+  var resetButton = document.getElementById("reset-button");
+  if (document.getElementById("oymuhurtikla").checked) {
+    resetButton.style.visibility = "hidden";
+  } else {
+    resetButton.style.visibility = "visible";
+  }
+};
+
+
+
+
+
+
+
+
