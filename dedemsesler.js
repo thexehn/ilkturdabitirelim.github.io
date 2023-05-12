@@ -14,12 +14,11 @@ audio.oncanplay = function() {
   if (document.getElementById("oymuhurtikla").checked) this.play()
 }
 
-var count;
-
+// Sayfa yüklendiğinde count değerini güncelle
 window.onload = function() {
-  count = localStorage.getItem("count") || 0;
+  var count = localStorage.getItem("count") || 0;
   document.getElementById("count").innerHTML = count + "&nbsp;";
-}
+};
 
 function basliyoruzCheck(el) {    
   if (el.checked) {
@@ -27,8 +26,9 @@ function basliyoruzCheck(el) {
     audios.src = sounds[Math.floor(Math.random()*sounds.length)];
     audios.load();
     audios.play();
+    var count = localStorage.getItem("count") || 0;
     count++;
-    
+    localStorage.setItem("count", count);
     el.addEventListener('change', function() {
       if (!this.checked) {
         audios.pause();
@@ -38,10 +38,11 @@ function basliyoruzCheck(el) {
   } else {
     audios.pause();
   }
-  localStorage.setItem("count", count);
+  var count = localStorage.getItem("count") || 0;
   document.getElementById("count").innerHTML = count + "&nbsp;";
-}
-
-function refreshPage() {
-  window.location.reload();
+  
+  // Sayfayı ses dosyası tamamlandığında yenile
+  audios.addEventListener("ended", function() {
+    window.location.reload();
+  });
 }
