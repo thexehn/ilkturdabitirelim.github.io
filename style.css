@@ -31,7 +31,7 @@ h5 {
 .kirmiziarka {
     background-color: rgb(196, 22, 28);
     height: 23px;
-    width: 300px;
+    width: 370px;
     margin: auto;
     position: relative;
     bottom: 38px;
@@ -62,26 +62,26 @@ h5 {
     left: 50%;
     margin-left: -200px;
     margin-top: -180px;
-    box-shadow: 3px 3px 4px 3px;
+    box-shadow: 2px 2px 3px 2px;
     z-index: -2;
-    cursor:grab;
 }
 
 .muhur {
-    border: 1px red solid;
+    border: 2px red solid;
     transform: rotate(-45deg);
     width: 100px;
     height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -40px;
-    margin-left: 28px;
+    margin-top: 85px !important;
+    margin-left: 55px;
     border-radius: 400px;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     z-index: 2;
     visibility: hidden;
+    opacity: 0;
     transition: 0.15s !important;
     
 
@@ -89,23 +89,25 @@ h5 {
 
 .muhur p {
     color: red;
-    font-size: 13px;
+    font-size: 22px;
     position: absolute;
-    margin-top: 6px;
-    margin-left: 2px;
+    margin-top: 12px;
+    margin-left: 4px;
     
 }
 
 
 #oymuhurtikla{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -36px;
-    margin-left: 32px;
+    margin-top: 93px;
+    margin-left: 68px;
     opacity: 0;
+    z-index: 10;
+    
     
 }
     
@@ -185,12 +187,22 @@ h5 {
           background-color: rgb(196, 22, 28);
           color:white;
       }
+
+      .btn:hover {
+        background-color: rgb(207, 58, 63);
+      }
       
       .oysifirla p {
           color: white;
           padding: 3px;
       }
-      
+
+      #count2-container {
+        margin-top: 30px;
+      }
+      #count3-container {
+        margin-top: 50px;
+      }
 
 
 @media screen and (max-width: 900px) {
@@ -208,8 +220,8 @@ h5 {
     }
 
     #oymuhurtikla{
-        width: 22px;
-        height: 22px;
+        width: 50px !important;
+        height: 50px !important;
         position: absolute;
         top: 50%;
         left: 50%;
