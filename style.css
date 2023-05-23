@@ -4,6 +4,11 @@
     src: url(PFDinTextCondPro-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Gilroy Bold";
+    src: url(Gilroy-Bold.otf);
+}
+
 * {
     font-family: "PF Din Text CondPro";
     text-align: center;
@@ -13,7 +18,7 @@
 }
 
 body {
-    background-color: rgb(60, 146, 179);
+    background-color: #00486f;
 
 }
 
@@ -21,29 +26,27 @@ h5 {
     font-size: 45px;
     display: inline;
     color: white;
+    font-family: "Gilroy Bold" !important;
 
 }
 
 #ilk {
-    letter-spacing: 2px;
+    font-family: "Gilroy Bold" !important;
 }
 
 .kirmiziarka {
-    background-color: rgb(196, 22, 28);
-    height: 23px;
+    background-color: #c3151c;
+    height: 31px;
     width: 370px;
     margin: auto;
     position: relative;
-    bottom: 38px;
+    bottom: 42px;
     z-index: -1;
     right: 5px;
 
 
 }
 
-.kirmizion h5 {
-    letter-spacing: 10px;
-}
 
 .ilkturdabitirelim {
     position: absolute;
@@ -67,8 +70,6 @@ h5 {
 }
 
 .muhur {
-    border: 2px red solid;
-    transform: rotate(-45deg);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -77,14 +78,17 @@ h5 {
     margin-top: 85px !important;
     margin-left: 55px;
     border-radius: 400px;
-    text-align: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 4;
     visibility: hidden;
     opacity: 0;
     transition: 0.15s !important;
-    
 
+}
+
+.muhur img {
+    width: 100px;
+    height: 100px;
 }
 
 .muhur p {
@@ -207,26 +211,23 @@ h5 {
 
 @media screen and (max-width: 900px) {
 
-    .pusula .muhur p {
-        font-size: 9px;
-    }
-    .container #oymuhurtikla:checked + .muhur {
+    .container #oymuhurtikla:checked + .muhur img, .container #oymuhurtikla:checked + .muhur {
         opacity: 1;
         visibility: visible;
-        width: 22px;
-        height: 22px;
+        width: 45px;
+        height: 45px;
         transition: 0.15s !important;
         
     }
 
     #oymuhurtikla{
-        width: 50px !important;
-        height: 50px !important;
+        width: 46px !important;
+        height: 46px !important;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -42px;
-        margin-left: 25px;
+        margin-top:  52px;
+        margin-left: 47px;
     }
 
     .oypusulasi {
@@ -240,8 +241,8 @@ h5 {
     .muhur {
         top: 50%;
         left: 50%;
-        margin-top: -45px;
-        margin-left: 21px;
+        margin-top: 48px !important;
+        margin-left: 42px;
         
     
     }

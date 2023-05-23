@@ -1,14 +1,9 @@
-.container #oymuhurtikla:checked + div {
+.container #oymuhurtikla:checked + div img, .container #oymuhurtikla:checked + div {
     opacity: 1;
     visibility: visible;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     transition: 0.15s !important;
-}
-
-.container #oymuhurtikla:checked ~ .tesekkurederiz {
-    opacity: 0;
-
 }
 
 
