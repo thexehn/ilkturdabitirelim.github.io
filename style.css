@@ -116,7 +116,7 @@ h5 {
 }
     
     .kirmiziarka1 {
-        background-color: rgb(196, 22, 28);
+    background-color: rgb(196, 22, 28);
     height: 23px;
     width: 200px;
     margin: auto;
@@ -252,7 +252,8 @@ h5 {
     }
 
     .kirmiziarka {
-        bottom: 43px;
+        bottom: 48px;
+        width: 340px;
     }
 
     .kirmiziarka1 {
